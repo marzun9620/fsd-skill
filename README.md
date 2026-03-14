@@ -1,4 +1,4 @@
-# FSD Architect — Claude Code Skill
+# FSD Architect - Claude Code Skill
 
 > Feature-Sliced Design architecture guardian for React, Next.js, Remix, and React Router projects.
 
