@@ -1,0 +1,15 @@
+{
+	"name": "fsd-architect-skill",
+	"version": "1.0.0",
+	"description": "Feature-Sliced Design architecture guardian for React and Next.js projects",
+	"author": "marzun",
+	"license": "MIT",
+	"keywords": [
+		"fsd",
+		"feature-sliced-design",
+		"architecture",
+		"react",
+		"nextjs",
+		"frontend"
+	]
+}
