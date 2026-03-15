@@ -2,26 +2,25 @@
 
 > Feature-Sliced Design architecture guardian for React, Next.js, Remix, and React Router projects.
 
-[![Agent Skills](https://img.shields.io/badge/Agent_Skills-1.0-blue)](https://agentskills.io)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-compatible-green)](https://claude.com/claude-code)
 
 ## What it does
 
 **FSD Architect** enforces [Feature-Sliced Design](https://feature-sliced.design) methodology in your frontend codebase. It activates automatically when you create or modify frontend files and ensures:
 
-- **Layer hierarchy** — App → Pages → Widgets → Features → Entities → Shared
-- **Import direction** — Modules only import from layers strictly below
-- **Public API enforcement** — Every slice exports through `index.ts`
-- **Segment conventions** — `ui/`, `model/`, `api/`, `lib/`, `config/`
-- **Framework integration** — Thin route wrappers for React Router 7, Next.js App Router, Remix
-- **Naming conventions** — kebab-case directories, PascalCase components, explicit named exports
+- **Layer hierarchy** - App → Pages → Widgets → Features → Entities → Shared
+- **Import direction** - Modules only import from layers strictly below
+- **Public API enforcement** - Every slice exports through `index.ts`
+- **Segment conventions** - `ui/`, `model/`, `api/`, `lib/`, `config/`
+- **Framework integration** - Thin route wrappers for React Router 7, Next.js App Router, Remix
+- **Naming conventions** - kebab-case directories, PascalCase components, explicit named exports
 
 ## Installation
 
 ### As a Claude Code plugin
 
 ```bash
-claude plugin add github:marzun/fsd-architect-skill
+claude plugin add github:marzun9620/fsd-skill
 ```
 
 ### Manual installation (project-level)
@@ -29,7 +28,7 @@ claude plugin add github:marzun/fsd-architect-skill
 ```bash
 mkdir -p .claude/skills/fsd-architect
 curl -o .claude/skills/fsd-architect/SKILL.md \
-  https://raw.githubusercontent.com/marzun/fsd-architect-skill/main/skills/fsd-architect/SKILL.md
+  https://raw.githubusercontent.com/marzun9620/fsd-skill/master/skills/fsd-architect/SKILL.md
 ```
 
 ### Manual installation (global)
@@ -37,7 +36,7 @@ curl -o .claude/skills/fsd-architect/SKILL.md \
 ```bash
 mkdir -p ~/.claude/skills/fsd-architect
 curl -o ~/.claude/skills/fsd-architect/SKILL.md \
-  https://raw.githubusercontent.com/marzun/fsd-architect-skill/main/skills/fsd-architect/SKILL.md
+  https://raw.githubusercontent.com/marzun9620/fsd-skill/master/skills/fsd-architect/SKILL.md
 ```
 
 ## Usage
@@ -82,14 +81,14 @@ export { useNotifications } from "./model/useNotifications";
 
 ## Compatibility
 
-| Framework | Support |
-|-----------|---------|
+| Framework              | Support                    |
+| ---------------------- | -------------------------- |
 | React + React Router 7 | Full (thin route wrappers) |
-| Next.js App Router | Full (page re-exports) |
-| Next.js Pages Router | Full (page re-exports) |
-| Remix | Full (thin route wrappers) |
-| Vite + React | Full |
-| Astro | Partial (pages layer) |
+| Next.js App Router     | Full (page re-exports)     |
+| Next.js Pages Router   | Full (page re-exports)     |
+| Remix                  | Full (thin route wrappers) |
+| Vite + React           | Full                       |
+| Astro                  | Partial (pages layer)      |
 
 ## FSD Layers at a Glance
 
