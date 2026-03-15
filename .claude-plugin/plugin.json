@@ -2,7 +2,9 @@
 	"name": "fsd-architect-skill",
 	"version": "1.0.0",
 	"description": "Feature-Sliced Design architecture guardian for React, Next.js, Remix, and React Router projects",
-	"author": "marzun",
+	"author": {
+		"name": "marzun"
+	},
 	"license": "MIT",
 	"keywords": [
 		"fsd",
