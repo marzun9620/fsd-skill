@@ -1,7 +1,7 @@
 {
 	"name": "fsd-architect-skill",
 	"version": "1.0.0",
-	"description": "Feature-Sliced Design architecture guardian for React and Next.js projects",
+	"description": "Feature-Sliced Design architecture guardian for React, Next.js, Remix, and React Router projects",
 	"author": "marzun",
 	"license": "MIT",
 	"keywords": [
@@ -10,6 +10,9 @@
 		"architecture",
 		"react",
 		"nextjs",
+		"remix",
+		"react-router",
+		"vite",
 		"frontend"
 	]
 }
